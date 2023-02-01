@@ -49,6 +49,8 @@ export class FimFase extends Phaser.Scene {
         this.scene.start('Fase02');
       } else if (this.proximaFase == 4) {
         this.scene.start('Fase03');
+      } else if (this.proximaFase == 5) {
+        this.scene.start('Fase04');
       }
       console.log('Nossa voce quer repetir');
     });

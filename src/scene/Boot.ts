@@ -21,12 +21,14 @@ export class Boot extends Phaser.Scene {
     this.load.image('bullet', 'bullet.png');
     this.load.image('bullet02', 'bullet02.png');
     this.load.image('meteor', 'meteor.png');
+    this.load.image('parte02', 'Parte02.png');
+    this.load.image('endGame', 'endGame.png');
     this.load.image('bomber', 'bomber.png');
     this.load.image('space', 'space.png');
     this.load.image('ship', 'ship.png');
     this.load.image('fullHearth', 'fullHearth.png');
     this.load.image('emptyHearth', 'emptyHearth.png');
-    this.load.image('gameover', 'gameover.png');
+    this.load.image('gameover', 'gameOver.png');
     this.load.spritesheet('dude', 'dude.png', {
       frameWidth: 32,
       frameHeight: 48
