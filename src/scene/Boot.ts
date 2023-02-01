@@ -1,28 +1,4 @@
 import Phaser from 'phaser';
-
-import sky from '../assets/sky.png';
-import dcpc from '../assets/dcpc.png';
-import background from '../assets/fundo.png';
-import title from '../assets/title.png';
-import upArrow from '../assets/upArrow.png';
-import leftArrow from '../assets/leftArrow.png';
-import rightArrow from '../assets/rightArrow.png';
-import logoStars from '../assets/logoStars.png';
-import bigBoss from '../assets/bigBooss.png';
-import ground from '../assets/platform.png';
-import star from '../assets/star.png';
-import bomb from '../assets/bomb.png';
-import cursor from '../assets/cursor.png';
-import bullet from '../assets/bullet.png';
-import bullet02 from '../assets/bullet02.png';
-import meteor from '../assets/meteor.png';
-import bomber from '../assets/bomber.png';
-import space from '../assets/space.png';
-import ship from '../assets/ship.png';
-import fullHearth from '../assets/fullHearth.png';
-import emptyHearth from '../assets/emptyHearth.png';
-import gameover from '../assets/gameover.png';
-
 export class Boot extends Phaser.Scene {
   constructor() {
     super('Boot');

@@ -58,7 +58,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
-      debug: true
+      debug: false
     }
   },
   scene: [Boot, Capa, Fase01, Fase02, Fase03, Fase04, GameOver, FimFase],
