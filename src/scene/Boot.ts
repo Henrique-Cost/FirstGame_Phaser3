@@ -7,7 +7,7 @@ export class Boot extends Phaser.Scene {
     this.load.setBaseURL('assets');
     this.load.image('sky', 'sky.png');
     this.load.image('dcpc', 'dcpc.png');
-    this.load.image('background', 'fundo.png');
+    this.load.image('background', 'fundo.jpg');
     this.load.image('title', 'title.png');
     this.load.image('upArrow', 'upArrow.png');
     this.load.image('leftArrow', 'leftArrow.png');
