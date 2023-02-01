@@ -80,6 +80,7 @@ export class secondBoss extends Phaser.GameObjects.Container {
         this.bossEmptyHearth.destroy();
 
         //fim fase
+        this.scene.scene.start('FimJogo');
 
         this.secondBossAlive = false;
       }

@@ -37,6 +37,8 @@ export class FimFase extends Phaser.Scene {
         this.scene.start('Fase03');
       } else if (this.proximaFase == 4) {
         this.scene.start('Fase04');
+      } else {
+        console.log('Parabens, sua unica vitoria na vida!!!!');
       }
     });
     this.levelRepeat.setInteractive();
@@ -48,6 +50,7 @@ export class FimFase extends Phaser.Scene {
       } else if (this.proximaFase == 4) {
         this.scene.start('Fase03');
       }
+      console.log('Nossa voce quer repetir');
     });
 
     this.nextLevel.setScale(0.5);

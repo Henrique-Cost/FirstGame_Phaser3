@@ -185,7 +185,7 @@ export default class Fase01 extends Phaser.Scene {
       (this.keyBoard?.isMoveUp || this.cursors.up?.isDown) &&
       this.player?.body.touching.down
     ) {
-      this.player.setVelocityY(-350);
+      this.player.setVelocityY(-370);
     }
   }
 }

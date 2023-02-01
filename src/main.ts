@@ -7,6 +7,7 @@ import Fase02 from './scene/Fase02';
 import { Fase03 } from './scene/Fase03';
 import { Fase04 } from './scene/Fase04';
 import { FimFase } from './scene/FimFase';
+import { FimJogo } from './scene/FimJogo';
 import { GameOver } from './scene/GameOver';
 
 function iOS() {
@@ -61,7 +62,17 @@ const config = {
       debug: false
     }
   },
-  scene: [Boot, Capa, Fase01, Fase02, Fase03, Fase04, GameOver, FimFase],
+  scene: [
+    Boot,
+    Capa,
+    Fase01,
+    Fase02,
+    Fase03,
+    Fase04,
+    GameOver,
+    FimFase,
+    FimJogo
+  ],
   scale: {
     width: 800,
     height: 600,
