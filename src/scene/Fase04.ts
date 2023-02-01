@@ -19,7 +19,7 @@ export class Fase04 extends Phaser.Scene {
   private meteors!: Phaser.Physics.Arcade.Group;
   private background!: ScrollingTexture;
   private life = 5;
-  private bossLife = 2;
+  private bossLife = 25;
 
   private fullHearth!: Phaser.GameObjects.Image;
   private emptyHearth!: Phaser.GameObjects.Image;
@@ -72,7 +72,7 @@ export class Fase04 extends Phaser.Scene {
     this.ship.setCollideWorldBounds(true);
 
     this.life = 5;
-    this.bossLife = 2;
+    this.bossLife = 25;
     //this.ship.setDamping(true);
     //this.ship.setDrag(1);
     //this.ship.setMaxVelocity(200);
@@ -118,7 +118,9 @@ export class Fase04 extends Phaser.Scene {
     bullet.destroy();
 
     this.bossLife--;
-    this.bossFullHearth.setCrop(0, 0, 10 * this.bossLife, 50);
+    this.bossFullHearth.setCrop(0, 0, 10 * this.bossLife, 100);
+
+    console.log(this.bossLife);
 
     if (this.bossLife <= 0) {
       this.boss.setTintFill(0xff0000);
@@ -154,20 +156,6 @@ export class Fase04 extends Phaser.Scene {
         });
       }, 1000);
     }
-  }
-
-  private handleHitMeteor(
-    bullet: Phaser.GameObjects.GameObject,
-    meteor: Phaser.GameObjects.GameObject
-  ) {
-    //this.physics.pause();
-    //setTimeout(() => {
-    //  this.scene.start('gameover');
-    //}, 1000);
-    //this.ship?.setTint(0xff0000)
-
-    bullet.destroy();
-    meteor.destroy();
   }
 
   private createBullet() {
@@ -209,6 +197,8 @@ export class Fase04 extends Phaser.Scene {
         this.boss.destroy();
         this.eyeLeft.destroy();
         this.eyeRight.destroy();
+        this.bossFullHearth.destroy();
+        this.bossEmptyHearth.destroy();
 
         this.createSecondBoss();
 

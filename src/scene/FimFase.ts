@@ -14,15 +14,17 @@ export class FimFase extends Phaser.Scene {
     this.proximaFase = data.nextLevel;
   }
   create() {
+    this.add.image(400, 300, 'background');
+    this.add.image(400, 200, 'dcpc').setScale(4);
     this.nextLevel = this.add.image(
       600,
-      300,
+      400,
       'atlasPrincipal',
       'botao_proxima_fase'
     );
     this.levelRepeat = this.add.image(
       200,
-      300,
+      400,
       'atlasPrincipal',
       'botao_repetir_fase'
     );
