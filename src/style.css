@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "comic-sans";
+	src: url("../assets/fonts/comic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "dosis";
+	src: url("../assets/fonts/dosis-regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "dosis-bold";
+	src: url("../assets/fonts/dosis-bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "dosis-semibold";
+	src: url("../assets/fonts/dosis-semibold.ttf") format("truetype");
+}
+
+body {
+	background: #000;
+	margin: 0;
+	padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+canvas {
+  margin: auto;
+}
+
+#btnFullScreen {
+	position: absolute;
+	right: 0;
+  top: 0;
+	margin: 10px;
+	padding: 5px;
+	color: #fff;
+	background: rgba(30, 30, 30, .5);
+	opacity: .5;
+}
