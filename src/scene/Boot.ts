@@ -27,15 +27,11 @@ export class Boot extends Phaser.Scene {
     this.load.image('fullHearth', 'fullHearth.png');
     this.load.image('emptyHearth', 'emptyHearth.png');
     this.load.image('gameover', 'gameover.png');
-    this.load.spritesheet('dude', '/assets/dude.png', {
+    this.load.spritesheet('dude', 'dude.png', {
       frameWidth: 32,
       frameHeight: 48
     });
-    this.load.atlas(
-      'atlasPrincipal',
-      '/assets/principal.png',
-      '/assets/principal.json'
-    );
+    this.load.atlas('atlasPrincipal', 'principal.png', 'principal.json');
   }
 
   create() {
