@@ -10,7 +10,7 @@ export class Capa extends Phaser.Scene {
     this.add.image(400, 350, 'title');
 
     setTimeout(() => {
-      this.scene.start('FimJogo');
+      this.scene.start('Fase01');
     }, 2000);
     //this.add.image(400, 450, 'dude', 4).setScale(4);
   }
