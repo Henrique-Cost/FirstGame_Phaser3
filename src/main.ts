@@ -6,6 +6,7 @@ import Fase01 from './scene/Fase01';
 import Fase02 from './scene/Fase02';
 import { Fase03 } from './scene/Fase03';
 import { Fase04 } from './scene/Fase04';
+import { Fase05 } from './scene/Fase05';
 import { FimFase } from './scene/FimFase';
 import { FimJogo } from './scene/FimJogo';
 import { GameOver } from './scene/GameOver';
@@ -59,7 +60,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
-      debug: false
+      debug: true
     }
   },
   scene: [
@@ -69,6 +70,7 @@ const config = {
     Fase02,
     Fase03,
     Fase04,
+    Fase05,
     GameOver,
     FimFase,
     FimJogo

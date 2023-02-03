@@ -5,7 +5,7 @@ export class FimJogo extends Phaser.Scene {
 
   create() {
     this.add.image(400, 300, 'background');
-    this.add.image(500, 300, 'endGame');
-    this.add.image(400, 400, 'parte02');
+    this.add.image(400, 200, 'endGame');
+    this.add.image(400, 400, 'parte02').setScale(0.5);
   }
 }

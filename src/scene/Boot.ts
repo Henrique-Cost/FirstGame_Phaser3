@@ -8,6 +8,7 @@ export class Boot extends Phaser.Scene {
     this.load.image('sky', 'sky.png');
     this.load.image('dcpc', 'dcpc.png');
     this.load.image('background', 'fundo.jpg');
+    this.load.image('background02', 'fundoFase05.png');
     this.load.image('title', 'title.png');
     this.load.image('upArrow', 'upArrow.png');
     this.load.image('leftArrow', 'leftArrow.png');
@@ -29,7 +30,7 @@ export class Boot extends Phaser.Scene {
     this.load.image('fullHearth', 'fullHearth.png');
     this.load.image('emptyHearth', 'emptyHearth.png');
     this.load.image('gameover', 'gameOver.png');
-    this.load.spritesheet('dude', 'dude.png', {
+    this.load.spritesheet('dude', 'player2.jpg', {
       frameWidth: 32,
       frameHeight: 48
     });
